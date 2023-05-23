@@ -4,7 +4,7 @@ const app = express();
 //Aim: With the help of router, get all the users with router.GET request and create a user with router.POST request
 
 //middleware
-//write router middleware here
+router.use(express.json());
 
 //Including users.json file
 const users = JSON.parse(
